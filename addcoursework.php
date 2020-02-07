@@ -4,7 +4,6 @@
   include 'subHeader.php';
 
   if(isset($_POST["Submit"])){
-	
     		$Title = $_POST["Title"];
     		$Description = $_POST["Description"];
     		$Document_name = $_POST["Document_name"];
@@ -15,7 +14,6 @@
 
 
         $product_image = $_FILES['product_image']['name'];
-		
 		//$product_image_tmp = $_FILES['product_image']['tmp_name'];
 		 if(isset($_FILES['product_image'])){ $_FILES['product_image']['tmp_name'];}
 
@@ -23,7 +21,8 @@
 		 move_uploaded_file($product_image,'images/$product_image');
 
 
-        $insertAss = "INSERT INTO assignments_record(title,description,document_name,Document_version,date,file)
+
+        $insertAss = "INSERT INTO coursework_record(title,description,document_name,Document_version,date,file)
         VALUES('".$Title."','".$Description."','".$Document_name."','".$Document_version."','".$Date."','".$File."')";
 
 		$connect->exec($insertAss);
@@ -42,22 +41,18 @@
       <h2 class="title1">Forms</h2>
       <div class="form-grids row widget-shadow" data-example-id="basic-forms">
         <div class="form-title">
-          <h4>Add Assignment :</h4>
+          <h4>Add Course Notes :</h4>
         </div>
-        <form action="addassignment.php" method="Post" enctype="multipart/form-data>
+        <form action="addcoursework.php" method="Post" enctype="multipart/form-data>
        <fieldset>
       
         
           <span class="FieldInfo">Title:</span><br><input type="text" name="Title" value=""><br>
           <span class="FieldInfo">Description:</span><br><input type="text" name="Description" value=""><br>
           <span class="FieldInfo">Document Name:</span><br><input type="text" name="Document_name" value=""><br>
-		  <span class="FieldInfo">Document Version:</span><br><input type="int" name="Document_version" value=""><br>
+		  <span class="FieldInfo">Document version:</span><br><input type="text" name="Document_version" value=""><br>
           <span class="FieldInfo">Date:</span><br><input type="date" name="Date" value=""><br>
            <span class="FieldInfo">File:</span><input type="file" name="product_image"/><br>
-		   
- 
-
-
     <br>
         <input type="Submit" name="Submit" value="Submit Your Record"><br>
 
