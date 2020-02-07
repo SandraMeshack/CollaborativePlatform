@@ -12,26 +12,25 @@
           </div>
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="sidebar-menu">
-             
-			  <li class="treeview">
-                <a href="students.php">
-                <i class="fa fa-laptop"></i>
-                <span>Students</span>
-                <i class="fa fa-angle-left pull-right"></i>
+              
+   
+			  <li>
+					<li class="treeview">
+                <a href="uploadassignments.php">
+                <i class="fa fa-th"></i> <span>Upload Assignment</span>
+                <small class="label pull-right label-info"></small>
                 </a>
               </li>
+			   <li>
+					<li class="treeview">
+                <a href="uploadcoursework.php">
+                <i class="fa fa-th"></i> <span>Upload Course notes</span>
+                <small class="label pull-right label-info"></small>
+                </a>
+              </li>
+						</li>
+           
 
-              <li class="treeview">
-                <a href="teachers.php">
-                <i class="fa fa-pie-chart"></i>
-                <span>Teachers</span>
-                <span class="label label-primary pull-right"></span>
-                </a>
-              </li>
-              
-	         
-             
-              
             </ul>
           </div>
           <!-- /.navbar-collapse -->

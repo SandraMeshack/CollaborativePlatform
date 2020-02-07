@@ -1,9 +1,6 @@
-
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<title>Chime's University</title>
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,13 +30,15 @@
 <body>
 
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/IMG_6168.JPG');">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
 			<div class="wrap-login100">
 				<form class="login100-form validate-form" method="POST">
-					
+					<span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span>
 
 					<span class="login100-form-title p-b-34 p-t-27">
-						Chime's University
+						Log in
 					</span>
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username">
@@ -59,11 +58,11 @@
 						</label>
 					</div>
 
-       
-					<input type="submit" class = "btn btn-primary" value="Admin" name="Admin">
-					<input type="submit" class = "btn btn-info" value="Student" name="Student">
-					<input type="submit" class = "btn btn-primary" value="Teacher" name="Teacher">
-					
+
+					<input type="submit" value="Admin" name="Admin">
+					<input type="submit" value="Student" name="Student">
+					<input type="submit" value="Teacher" name="Teacher">
+					<input type="submit" value="Parent" name="Parent">
 
 
 					<div class="text-center p-t-90">
@@ -102,10 +101,9 @@
 
 
 <?php
-
 include 'connect.php';
 
-
+session_start();
 
    if(isset($_POST['Admin'])){
 

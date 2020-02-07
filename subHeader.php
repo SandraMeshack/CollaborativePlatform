@@ -1,11 +1,6 @@
 <!-- header-starts -->
 <div class="sticky-header header-section ">
-  <div class="header-left">
-    <!--toggle button start-->
-    <button id="showLeftPush"><i class="fa fa-bars"></i></button>
-    <!--toggle button end-->
-    
-    <!--notification menu end -->
+  <div class="header-left"> 
     <div class="clearfix"> </div>
   </div>
   <div class="header-right">
@@ -30,8 +25,8 @@
             <div class="profile_img">
               <span class="prfil-img"><img src="" alt=""> </span>
               <div class="user-name">
-                <p>Admin Name</p>
-                <span>Administrator</span>
+                
+                <span>Teacher</span>
               </div>
               <i class="fa fa-angle-down lnr"></i>
               <i class="fa fa-angle-up lnr"></i>
@@ -39,6 +34,7 @@
             </div>
           </a>
           <ul class="dropdown-menu drp-mnu">
+
 
             <li> <a href="logout.php"><i class="fa fa-sign-out"></i> Logout</a> </li>
           </ul>
